@@ -77,7 +77,7 @@ export default function NewList() {
             >
               {movies.map((movie) => (
                 <option key={movie._id} value={movie._id}>
-                  {movie.title}
+                 { `${movie.title}  --- (${movie.genre})`} 
                 </option>
               ))}
             </select>
